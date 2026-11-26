@@ -1,0 +1,2 @@
+bin/linux-audio-focus.py usr/bin/linux-audio-focus
+systemd/linux-audio-focus.service usr/lib/systemd/user/

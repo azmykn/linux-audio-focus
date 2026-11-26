@@ -11,15 +11,32 @@ When an incoming audio or video starts playing (for example, a WhatsApp Web voic
 - **Zero Polling / Event-Driven**: Listens strictly to D-Bus signal events with negligible CPU and memory usage.
 - **Non-Privileged**: Runs entirely under user session (`systemd --user`) without requiring `sudo`.
 
-## Requirements
+## Installation Methods
 
-- Linux with a graphical desktop session (GNOME, KDE, XFCE, etc.)
-- Python 3 with `PyGObject` (`python3-gi`)
-  - Ubuntu/Debian: `sudo apt install python3-gi`
-  - Fedora: `sudo dnf install python3-gobject`
-  - Arch: `sudo pacman -S python-gobject`
+### Option 1: Native APT / Debian Package (.deb)
 
-## Quick Installation
+Download the latest `.deb` package from [Releases](https://github.com/azmykn/linux-audio-focus/releases), then install it using `apt`:
+
+```bash
+sudo apt install ./linux-audio-focus_1.0.0_all.deb
+```
+
+Or build and install it locally:
+
+```bash
+./packaging/build-deb.sh
+sudo apt install ./dist/linux-audio-focus_1.0.0_all.deb
+```
+
+### Option 2: Snap Store (Ubuntu App Center)
+
+Install directly via Snapcraft:
+
+```bash
+sudo snap install linux-audio-focus
+```
+
+### Option 3: Quick Script Install (No Root Required)
 
 Clone this repository and run the install script:
 
@@ -31,14 +48,20 @@ cd linux-audio-focus
 
 ## Uninstallation
 
-To remove the service and script:
+- If installed via script:
+  ```bash
+  ./uninstall.sh
+  ```
+- If installed via APT:
+  ```bash
+  sudo apt remove linux-audio-focus
+  ```
+- If installed via Snap:
+  ```bash
+  sudo snap remove linux-audio-focus
+  ```
 
-```bash
-cd linux-audio-focus
-./uninstall.sh
-```
-
-## Manual Verification
+## Service Status & Logs
 
 Check service status anytime:
 
