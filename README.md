@@ -1,4 +1,8 @@
-# Linux Audio Focus (MPRIS)
+<div align="center">
+  <img src="assets/icon.png" width="128" height="128" alt="Linux Audio Focus Icon" />
+  <h1>Linux Audio Focus</h1>
+  <p><strong>Mobile-like audio focus manager for Linux desktops (MPRIS)</strong></p>
+</div>
 
 A lightweight Linux background service that brings mobile-like audio focus to your desktop.
 

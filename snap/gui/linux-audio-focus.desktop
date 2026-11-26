@@ -2,6 +2,7 @@
 Name=Linux Audio Focus
 Comment=Mobile-like audio focus manager for Linux desktops
 Exec=linux-audio-focus
+Icon=linux-audio-focus
 Terminal=false
 Type=Application
 Categories=AudioVideo;Audio;

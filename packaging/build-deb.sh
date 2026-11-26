@@ -45,6 +45,12 @@ chmod 644 "${BUILD_DIR}/usr/lib/systemd/user/${PKG_NAME}.service"
 echo "enable ${PKG_NAME}.service" > "${BUILD_DIR}/usr/lib/systemd/user-preset/90-${PKG_NAME}.preset"
 chmod 644 "${BUILD_DIR}/usr/lib/systemd/user-preset/90-${PKG_NAME}.preset"
 
+# 3b. Install desktop entry and application icon
+mkdir -p "${BUILD_DIR}/usr/share/applications"
+mkdir -p "${BUILD_DIR}/usr/share/icons/hicolor/512x512/apps"
+cp "${ROOT_DIR}/snap/gui/linux-audio-focus.desktop" "${BUILD_DIR}/usr/share/applications/"
+cp "${ROOT_DIR}/assets/icon.png" "${BUILD_DIR}/usr/share/icons/hicolor/512x512/apps/${PKG_NAME}.png"
+
 # 4. Control file
 cat << EOF > "${BUILD_DIR}/DEBIAN/control"
 Package: ${PKG_NAME}
