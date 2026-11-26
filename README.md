@@ -24,7 +24,7 @@ When an incoming audio or video starts playing (for example, a WhatsApp Web voic
 Clone this repository and run the install script:
 
 ```bash
-git clone https://github.com/azmy/linux-audio-focus.git
+git clone https://github.com/azmykn/linux-audio-focus.git
 cd linux-audio-focus
 ./install.sh
 ```

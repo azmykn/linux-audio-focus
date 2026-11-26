@@ -1,6 +1,6 @@
 [Unit]
 Description=Linux Audio Focus Manager (MPRIS)
-Documentation=https://github.com/azmy/linux-audio-focus
+Documentation=https://github.com/azmykn/linux-audio-focus
 After=graphical-session.target sound.target
 
 [Service]
