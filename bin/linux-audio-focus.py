@@ -2,11 +2,13 @@
 """
 Linux Audio Focus Manager (MPRIS).
 
-Automatically pauses competing media players when an incoming audio/voice stream plays
-(e.g. WhatsApp Web voice note in Chrome), and automatically resumes the interrupted
-player (e.g. YouTube in Firefox, local video in VLC) when the voice note ends.
+An event-driven Linux background utility that provides mobile-grade Audio Focus.
+When an incoming audio or voice note plays (e.g. WhatsApp Web in Chrome), competing
+media players (e.g. YouTube in Firefox, VLC, Spotify) are automatically paused,
+and instantly resumed when the voice note ends.
 
-Author: Mohamed Azmy
+Author: Mohamed Azmy (mask.azmy@gmail.com)
+Repository: https://github.com/azmykn/linux-audio-focus
 License: MIT
 """
 

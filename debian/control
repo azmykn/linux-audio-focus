@@ -9,8 +9,10 @@ Homepage: https://github.com/azmykn/linux-audio-focus
 Package: linux-audio-focus
 Architecture: all
 Depends: ${misc:Depends}, python3, python3-gi, gir1.2-glib-2.0
-Description: Mobile-like audio focus manager for Linux desktops (MPRIS)
- Automatically pauses competing media players (YouTube in browsers,
- Spotify, VLC, local video players) when an incoming audio/voice stream
- plays (e.g. WhatsApp Web voice note in Chrome), and automatically resumes
- interrupted playback when the voice note finishes.
+Description: Mobile-style Audio Focus manager for Linux desktops (MPRIS)
+ Linux Audio Focus brings intelligent, mobile-grade Audio Focus management
+ to your Linux desktop. It runs quietly in the background as an event-driven
+ service that monitors media playback via D-Bus (MPRIS). When an incoming
+ audio or voice note plays (e.g. WhatsApp Web in Chrome), competing media
+ players (e.g. YouTube in Firefox, VLC, Spotify) are automatically paused,
+ and instantly resumed when the voice note ends.

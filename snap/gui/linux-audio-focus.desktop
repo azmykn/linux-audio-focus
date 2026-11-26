@@ -1,10 +1,12 @@
 [Desktop Entry]
 Name=Linux Audio Focus
-Comment=Mobile-like audio focus manager for Linux desktops
+GenericName=Audio Focus Manager
+Comment=Intelligent mobile-style Audio Focus manager for Linux (Auto-pause/resume)
 Exec=linux-audio-focus
 Icon=linux-audio-focus
 Terminal=false
 Type=Application
-Categories=AudioVideo;Audio;
+Categories=AudioVideo;Audio;Utility;
+Keywords=audio;focus;media;mpris;pause;resume;sound;spotify;youtube;vlc;whatsapp;
 StartupNotify=false
 X-GNOME-Autostart-enabled=true
