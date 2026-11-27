@@ -1,0 +1,18 @@
+Archive: stable
+Component: main
+Origin: linux-audio-focus
+Label: Linux Audio Focus Repository
+Architecture: all amd64
+Date: Fri, 27 Nov 2026 00:34:57 UTC
+MD5Sum:
+ 2b8b90ebdab5c8c0dafefb717edb216c 949 Packages
+ 262d146aa94a85fc7fd5e7cb0a7141fc 623 Packages.gz
+ dc5bfac9dbedbdf968cbc9f5e4263758 203914 linux-audio-focus_1.0.0_all.deb
+SHA1:
+ 60de706400ab1a36c99a06d54f19e08e67971510 949 Packages
+ b90f82929224f8596bcbac014edc624788efe80c 623 Packages.gz
+ 06c01102f6d3830024fab05543857423ae3c7f58 203914 linux-audio-focus_1.0.0_all.deb
+SHA256:
+ 2228c2e67e5929ee82c2dc55801c27b0109427adf2b776cc36ef533edafadaa7 949 Packages
+ 213fa2968bfee467183c3a9999e3bd825d424422bf6f863eff65515578f4211d 623 Packages.gz
+ 8baf531b29aac269c563e350174c9f1c6b8e714ac3f7c543833d76742507dc96 203914 linux-audio-focus_1.0.0_all.deb
