@@ -120,4 +120,8 @@ sudo apt install linux-audio-focus</code></pre>
 with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
     f.write(index_html)
 
+# 7. Create .nojekyll to prevent Jekyll from altering files
+with open(os.path.join(OUTPUT_DIR, ".nojekyll"), "w") as f:
+    pass
+
 print(f"==> Successfully generated APT repository in {OUTPUT_DIR}")
