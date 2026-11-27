@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Linux Audio Focus
 GenericName=Audio Focus Manager
-Comment=Intelligent mobile-style Audio Focus manager for Linux (Auto-pause/resume)
+Comment=Auto-pause background media when other audio plays, like on phones
 Exec=linux-audio-focus
 Icon=linux-audio-focus
 Terminal=false

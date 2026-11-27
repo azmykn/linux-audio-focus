@@ -1,17 +1,22 @@
 name: linux-audio-focus
 base: core22
 version: '1.0.1'
-summary: Mobile-style Audio Focus manager for Linux (Auto-pause/resume)
+summary: Auto-pause background media when other audio plays, like on phones
 description: |
-  Linux Audio Focus brings intelligent, mobile-grade Audio Focus management to your Linux desktop.
+  Ever listened to a YouTube video, podcast, or music on your PC, clicked to play a WhatsApp voice note—and had both blast through your speakers at the same time?
 
-  On mobile phones, when a voice note or incoming call plays, background YouTube videos or music automatically pause and resume when finished. On Linux desktops, multiple audio streams clash and play on top of each other by default.
+  On smartphones, background audio pauses automatically. On Linux desktops, all audio streams clash together by default. Linux Audio Focus fixes this problem once and for all.
 
-  Linux Audio Focus fixes this by running as a lightweight background service that listens to media player events over D-Bus (MPRIS):
-  - When an incoming audio or voice note plays (e.g. WhatsApp Web in Chrome), it automatically pauses competing players (e.g. YouTube in Firefox, VLC, or Spotify).
-  - When the voice note ends, your background media resumes automatically from the exact moment it stopped.
-  - Zero CPU polling (event-driven D-Bus signals) with minimal memory footprint (~14MB).
-  - Works with all popular web browsers (Chrome, Firefox, Brave, Edge) and media players (VLC, MPV, Celluloid, Spotify).
+  It runs quietly in the background and brings smart mobile-grade Audio Focus to your desktop:
+  - Play an audio message or voice note (WhatsApp Web, Telegram, Slack, etc.).
+  - Your background media (YouTube in browsers, Spotify, VLC, MPV) pauses instantly.
+  - When the voice note finishes, your media resumes automatically from the exact second it stopped.
+
+  Highlights:
+  - Zero Configuration: Works out of the box right after installation.
+  - Universal MPRIS Support: Seamlessly controls Chrome, Firefox, Brave, Edge, VLC, MPV, Celluloid, Spotify, and more.
+  - True Event-Driven: Consumes 0.0% CPU at idle (pure D-Bus event listening) and uses negligible memory (~14MB).
+  - Reliable State Management: Tracks interrupting streams accurately so your audio never stutters or gets stuck.
 
 grade: stable
 confinement: strict
