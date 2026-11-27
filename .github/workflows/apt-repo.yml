@@ -1,0 +1,38 @@
+name: Deploy APT Repository
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy-apt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install packaging dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y dpkg-dev
+
+      - name: Build Debian package and generate APT repository
+        run: |
+          chmod +x packaging/build-deb.sh packaging/generate-apt-repo.py
+          ./packaging/build-deb.sh
+          ./packaging/generate-apt-repo.py public
+
+      - name: Deploy to GitHub Pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
